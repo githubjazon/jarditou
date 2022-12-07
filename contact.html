@@ -29,20 +29,20 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">jarditou.com</a>
+          <a class="navbar-brand" href="/index.html">jarditou.com</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link " aria-current="page" href="/index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tableau</a>
+                <a class="nav-link" href="/tableau.html">Tableau</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a class="nav-link active " href="/contact.html">Contact</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -57,27 +57,100 @@
             </div>
                 
 
-<div class="row">
-    <div  class=" col-8 shadow p-3 bg-body rounded  m-3" >
-          <h1>Accueil</h1>
-          <hr>
-          <h2>L'entreprise</h2>
-                <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
-                <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
-                <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie</p>
-          <h2>Qualité</h2>
-                <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
-                <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
 
-          <h2>Devis gratuit</h2>
-                <p>Vous pouvez bien sûr nous contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
-          <hr>
-      
-    </div>
-    
-    <h1 class=" col bg-warning text-center">[Colonne de droite]</h1>
+    <div class="m-2 ">
+        <div>
+            <p>* Ces zones sont obligatoires</p>
+            <h1>Vos Coordonnées</h1>
+        </div>
 
-</div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputNom1">Nom*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Veuillez saisir votre nom " >
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputPrenom1">Prénom*</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Veuillez saisir votre prénom " >
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputSexe1">Sexe*</label>
+                </div>
+
+            <div class="row m-2">
+                  <div class="form-check col-1 ">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                    <label class="form-check-label" for="exampleRadios1">Féminin</label>
+                       
+                  
+                  </div>
+                <div class="form-check col-1">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">Masculin </label>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputDate1">Date de naissance*</label>
+                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="jj/mm/aaaa" >
+              </div>
+
+
+              <div class="form-group">
+                <label for="exampleInputCodepostal1">Code postal*</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+
+
+              <div class="form-group">
+                <label for="exampleInputAdresse1">Adresse</label>
+                <input type="text" class="form-control" id="exampleInputAdresse1">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputVille1">Ville</label>
+                <input type="text" class="form-control" id="exampleInputVille1">
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email*</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="dave.loper@afpa.fr">
+              </div>
+        <div>
+            <h1>Votre demande</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Sujet</label>
+            <select class="form-control"  id="exampleFormControlSelect1" >
+              <option>Veuillez sélectionner un sujet</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Votre question* :</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1"> J'accepte le traitement informatique de ce formulaire.</label>
+          </div>
+          <button type="submit" class="btn btn-dark btn-outline-primary text-white ">Submit</button>
+          <button type="reset" class="btn btn-dark btn-outline-primary text-white ">Annuler</button>
+              </form>
+    </div>          
+
+
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
